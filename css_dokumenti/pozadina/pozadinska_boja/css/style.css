@@ -1,0 +1,28 @@
+body{
+    font-size: 18px;
+    background-color: #ddd;
+}
+
+header{
+    background-color: green;
+}
+
+nav{
+    background-color: #ffc;
+}
+
+main{
+    background-color: skyblue;
+}
+
+footer{
+    background-color: #7a2525;
+}
+
+h1{
+    background-color: rgb(212, 132, 132);
+}
+
+p{
+    background-color: #eee;
+}

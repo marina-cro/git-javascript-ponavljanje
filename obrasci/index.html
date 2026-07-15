@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML obrasci</title>
+</head>
+<body>
+    <header>
+        <h1>Rad s obrascima</h1>
+    </header>
+    <main>
+        <form action="onSubmit" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Registracija</legend>
+                <label for="korisnicko-ime">Korisničko ime: *</label>
+                <input type="text" name="korisnicko-ime" id="korisnicko-ime" autofocus placeholder="Korisničko ime" required pattern="[A-Za-z]{3,10}" title="unesite 3 - 10 alfanumeričkih znakova">
+
+                <br>
+                <br>
+
+                <label for="lozinka">Lozinka: *</label>
+                <input type="password" name="lozinka" id="lozinka" 
+                required placeholder="lozinka" title="Lozinka" required placeholder="lozinka">
+                <br>
+                <br>
+                <label>Spol: *</label><br>
+                <label for="male">Muško</label>
+                <input type="radio" name="spol" id="male" value="muško" required>
+                <label for="female">Žensko</label>
+                <input type="radio" name="spol" id="female" value="žensko" required>
+                <br>
+                <br>
+                <label for="fotografija">Vaša fotografija</label>
+                <input type="file" name="fotografija" id="fotografija" multiple accept=".jpg, .jpeg, .png, .gif, .webp">
+                <br>
+                <br>
+                <!--za mijenjanje boje ili nešto za završni-->
+                <label for="sprema">Stručna sprema: *</label>
+                <select name="sprema" id="sprema" required>
+                    <option disabled hidden selected>Odaberite stručnu spremu</option>
+                    <option value="1">NSS</option>
+                    <option value="2">SSS</option>
+                    <option value="3">VŠS</option>
+                    <option value="4">VSS</option>
+                </select>
+                <br>
+                <br>
+                <label for="sprema2">Stručna sprema: *</label>
+                <br>
+                <input type="text" name="sprema2" id="sprema2" required list="lista-kratica">
+                <datalist id="lista-kratica">
+                    <option value="NSS" />
+                    <option value="SSS" />
+                    <option value="VŠS" />
+                    <option value="VSS" />
+                </datalist>
+                <br>
+                <br>
+                <label for="zasto">zašto ste odabrali nas?</label>
+                <br>
+                <textarea name="zasto" id="zasto" cols="70" rows="10"></textarea>
+                <br>
+                <br>
+                <label for="boja">Boja:</label>
+                <br>
+                <input type="color" name="boja" id="boja">
+                <br>
+                <br>
+                <label>Datum rođenja: *</label>
+                <input type="date" name="datum-rodenja" id="datum-rodenja" required min="2021-01-01">
+                <br>
+                <br>
+                <label for="E-mail">E-mail adresa (ako upišete više e-mailova razdvojite zarezom)</label><br>
+                <input type="email" name="E-mail" id="E-mail" multiple>
+                <br>
+                <br>
+                <lable>Broj završenih razreda srednje škole:</lable><br>
+                <input type="number" name="broj-razreda" id="broj-razreda" min="0" max="5" value="0" step="0.3">
+                <br>
+                <br>
+                <button type="submit formnovalidate">Predaj bez validacije</button>
+                <button type="submit">
+                    Pošalji
+                </button>
+                <input type="submit" value="uredu">
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

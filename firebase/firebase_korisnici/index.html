@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js users firebase</title>
+
+    <style>
+            body{
+                font-family: Arial, sans-serif;
+                max-width: 600px;
+                margin: 2rem auto;
+            }
+
+            ul{
+                padding-left: 0;
+            }
+
+            form>*{
+                margin: 0.5rem 0;
+                display: block;
+                width: 100%;
+                padding: 0.5rem;
+            }
+
+            button{
+                width: auto;
+                cursor: pointer;
+            }
+
+            li{
+                list-style-type: none;
+                background-color: #f4f4f4;
+                margin-bottom: 0.5rem;
+                padding: 0.5rem;
+                cursor: pointer;
+            }
+
+            li:hover{
+                background-color: #ddd;
+            }
+
+    </style>
+</head>
+<body>
+        <h1>Korisnici</h1>
+        <form id="addUserForm">
+            <input type="text" id="nameInput" placeholder="Ime korisnika" required>
+            <input type="email" id="emailInput" placeholder="Email korisnika" required>
+            <button type="submit">Dodaj korisnika</button>
+        </form>
+        <ul id="usersList">
+        </ul>
+
+        <script type="module" src="js/script.js"></script>
+</body>
+</html>

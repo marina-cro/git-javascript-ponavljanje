@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ispuna margine</title>
+    <style>
+        body{
+           box-sizing:border-box;
+           /*gornja strana, desna strana, donja strana, lijeva strana*/
+           /*gornja i donja: 20px*/
+           /*lijeva i desna: 20px 30px*/
+            padding: 20px 30px 40px 10px;
+            margin: 0;
+        }
+    
+
+        h1{
+            padding-top: 10px;
+            margin-top: 10px;
+            background-color: aqua; 
+        }
+
+        p{
+            margin: 0px;
+           /*border-left: dotted red;
+            border-right: dotted red;
+            border-bottom: 4px dashed green;
+            border-top: 10px groove blue;*/
+            border-style:double dashed solid groove;
+            border-width: thin medium thick 20px;
+            border-color: antiquewhite aquamarine rebeccapurple slategray;
+            margin: 5px;
+            padding:10px;
+        }
+
+        div{
+            background-color: orange;
+            box-sizing: border-box;
+            /*padding: 10px;*/
+            /*margin: 5px;*/
+            color: blue;
+        }
+
+        span{
+            box-sizing: content-box;
+            margin: 5px;
+            color: red;
+        }
+        .height1{
+            height: 150%;
+        }
+
+        .height2{
+            height: 150px;
+        }
+
+        .blue{
+            background-color: blue;
+            color:white;
+
+        }
+
+        /*BOX SIZING*/
+        .width-height{
+            width: 25%;
+            height: 300px;
+            padding: 10px;
+            float: left;
+            border: 58px solid red;
+            box-sizing: border-box;
+
+        }
+
+        .clear{
+            background-color: transparent;
+        }
+
+        .clear::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        /*MARGIN AUTO*/
+        .margin1{
+            margin-left: auto;
+        }
+
+        .height1{
+            height: 150px;
+        }
+
+        .width2{
+            width: 500px;
+        }
+
+        .padding1{
+            padding: 20px;
+        }
+
+        .border1{
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ispuna i margine</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi modi repellendus fugit cum quisquam accusamus qui
+            distinctio sed! Corrupti dicta eos voluptatum commodi mollitia! Fugiat aut nisi expedita eos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, hic. Beatae quibusdam non esse vel expedita nisi 
+            optio accusamus perspiciatis. Dolor tempore reiciendis eaque hic culpa aliquam veritatis quas illum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi modi repellendus fugit cum quisquam accusamus qui
+            distinctio sed! Corrupti dicta eos voluptatum commodi mollitia! Fugiat aut nisi expedita eos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, hic. Beatae quibusdam non esse vel expedita nisi 
+            optio accusamus perspiciatis. Dolor tempore reiciendis eaque hic culpa aliquam veritatis quas illum!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi modi repellendus fugit cum quisquam accusamus qui
+            distinctio sed! Corrupti dicta eos voluptatum commodi mollitia! Fugiat aut nisi expedita eos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, hic. Beatae quibusdam non esse vel expedita nisi 
+            optio accusamus perspiciatis. Dolor tempore reiciendis eaque hic culpa aliquam veritatis quas illum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi modi repellendus fugit cum quisquam accusamus qui
+            distinctio sed! Corrupti dicta eos voluptatum commodi mollitia! Fugiat aut nisi expedita eos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, hic. Beatae quibusdam non esse vel expedita nisi 
+            optio accusamus perspiciatis. Dolor tempore reiciendis eaque hic culpa aliquam veritatis quas illum!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi modi repellendus fugit cum quisquam accusamus qui
+            distinctio sed! Corrupti dicta eos voluptatum commodi mollitia! Fugiat aut nisi expedita eos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, hic. Beatae quibusdam non esse vel expedita nisi 
+            optio accusamus perspiciatis. Dolor tempore reiciendis eaque hic culpa aliquam veritatis quas illum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi modi repellendus fugit cum quisquam accusamus qui
+            distinctio sed! Corrupti dicta eos voluptatum commodi mollitia! Fugiat aut nisi expedita eos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, hic. Beatae quibusdam non esse vel expedita nisi 
+            optio accusamus perspiciatis. Dolor tempore reiciendis eaque hic culpa aliquam veritatis quas illum!
+        </p>
+        <div>
+            lorem ipsum 
+        </div>
+        <div>
+            lorem ipsum 
+        </div>
+        <div>
+            lorem ipsum 
+        </div>
+        <div>
+            lorem ipsum 
+        </div>
+        <div>
+            lorem ipsum
+        </div>
+        <div>
+            lorem ipsum 
+        </div>
+        <span>
+            lorem ipsum
+        </span>
+        <span>
+            lorem ipsum 
+            </span>
+        <span>
+            lorem ipsum
+        </span>
+        <span>
+            lorem ipsum 
+        </span>
+        <span>
+            lorem ipsum 
+        </span>
+        <span>
+            lorem ipsum
+        </span>
+
+        <h3>Height</h3>
+        <div class="height2">
+            <div class="height1 blue">
+                Lorem ipsum
+            </div>
+        </div>
+
+        <h3>box sizing</h3>
+        <div class="clear">
+            <div class="width-height">lorem ipsum</div>
+            <div class="width-height">lorem ipsum</div>
+            <div class="width-height">lorem ipsum</div>
+            <div class="width-height">lorem ipsum</div>
+        </div>
+
+        <h3>Height</h3>
+        <div class="height2">
+            <div class="height1 blue">
+                Lorem ipsum
+            </div>
+        </div>
+
+        <h3>margin-auto</h3>
+        <div class="margin1 padding1 border width2 height2">
+            lorem ipsum
+        </div>
+    </main>
+</body>
+</html>

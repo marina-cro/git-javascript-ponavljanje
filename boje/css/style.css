@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 25vh;
+    padding: 15px;
+}
+
+
+/*STANDARDNI NAZIV BOJA*/
+.standard{
+    background-color: red;
+}
+
+.standard h1{
+    color:antiquewhite;
+}
+
+.alternative{
+    background-color: blue;
+}
+
+/*RGB PRIKAZ BOJA*/ /*rgb vrijednosti na internetu možemo naći bilo koju*/
+.rgb{
+    background-color: rgb(238, 232, 170);
+}
+
+.rgb h1{
+    color: rgb(122, 122, 122, 0.7);
+}
+
+.rgb p{
+    color: rgb(255, 16, 122, 0.4); /*ovo zadnje 0.4 predstavlja transparentnost*/
+}
+
+/*HEKSADIMENSIONALNI PRIKAZ BOJA*/
+.heksadecimal{
+    background-color: #ccffcc;
+}
+
+.heksadecimal h1{
+    color: #a0a123;
+}
+
+.heksadecimal p{
+    color: #b22222;
+}
+
+/*HSL*/
+.hsl{
+    background-color: hsl(180, 38%, 60%);
+}
+
+.hsl h1{
+    color: hsl(850, 35%, 20%);
+}
+
+.hsl p{
+    color: hsl(52, 55%, 88%);
+}

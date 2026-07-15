@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css varijable</title>
+    <style>
+        :root{
+            /*globalna varijabla*/
+            --primarna-boja: red;
+            --sekundarna-boja: blue;
+            --terciarna-boja: green;
+            --veliki-font: larger;
+        }
+
+        body{
+            font-size: var(--veliki-font);
+        }
+
+        h1{
+            color: var(--primarna-boja);
+        }
+
+        h2{
+            color: var(--sekundarna-boja);
+        }
+
+        h3{
+            color: var(--sekundarna-boja);
+        }
+
+        p{
+            --paragraf-color: rgba(255, 255, 0, 0.5);
+            color: var(--paragraf-color);
+        }
+
+        strong{
+            color: var(--terciarna-boja);
+            color:var(--paragraf-color);
+        }
+
+        h4{
+            color: var(--terciarna-boja);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS varijable</h1>
+    <h2>css varijable</h2>
+    <h3>css varijable</h3>
+    <p>
+        <strong>lorem ipsum olor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum
+        temporecupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        </strong> dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem r
+        dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum
+    </p>
+    
+</body>
+</html>

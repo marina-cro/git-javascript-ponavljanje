@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori pseudoelemenata</title>
+    <style>
+        p::first-letter {
+            font-size: 32px;
+        }
+
+        p::first-line {
+            color: red
+        }
+
+        p::selection {
+            color: red;
+            background-color: yellow;
+        }
+
+        h1::before {
+            content: "Upamti - ";
+            color: red;
+            background-color: yellow;
+        }
+
+        h1::after {
+            content: " - zapamti";
+            display: block;
+            clear: both;
+        }
+
+        li::marker {
+            color: red;
+            background-color: yellow;
+            font-size: 50px;
+        }
+
+        #prva-lista li::marker {
+            color: green;
+            background-color: blue;
+        }
+
+        ol li::marker {
+            color: aqua;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum debitis labore quos rem rerum tempore
+        cupiditate optio, expedita eaque tenetur magnam atque dolorum soluta ad, ullam iste porro possimus.
+    </p>
+    <ul id="prva-lista">
+        <li>Stavka 1</li>
+        <li>Stavka 2</li>
+        <li>Stavka 3</li>
+    </ul>
+    <ul>
+        <li>Stavka 1</li>
+        <li>Stavka 2</li>
+        <li>Stavka 3</li>
+    </ul>
+    <ul>
+        <li>Stavka 1</li>
+        <li>Stavka 2</li>
+        <li>Stavka 3</li>
+    </ul>
+    <ol>
+        <li>Stavka 1</li>
+        <li>Stavka 2</li>
+        <li>Stavka 3</li>
+    </ol>
+
+</body>
+
+</html>

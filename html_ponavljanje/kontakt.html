@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="galerija, izložbe, umjetnička djela, svijet u boji, grad u noći, skrivene ljepote prirode">
+    <meta name="author" content="Marina Nimac">
+    <meta name="description" content="Galerija moderne umjetnosti s bogatim izborom radova"> 
+    <title>Galerija moderne 
+        umjetnosti</title>
+    <link rel="icon" href="slike/favicon.ico">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+   <header>
+    <img src="slike/logo.png" alt="galerija moderne umjetnosti" width="200px">
+    <nav>
+       <ul>
+            <li><a href="index.html">Početna</a></li>
+             <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            <li><a href="izlozbe.html">Izložbe</a></li>
+        </ul> 
+    </nav>
+   </header> 
+   <main>
+    <h1>Kontaktirajte nas</h1>
+    <p>ako imate bilo kakava pitanja slobodno nas kontaktirajte putem obrasca u nastavku:</p>
+    <form action="/submit_form" method="post">
+        <label for="name">Ime:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for =tip_upita>Vrsta upita:</label>
+        <input type="radio" id="upit1" name="tip_upita" value="opći" checked>Opći upit<br>
+        <input type="radio" id="izlozba" name="tip_upita" value="izložba">Informacije o izložbi<br><br>
+        <label for="poruka">Poruka:</label>
+        <br>
+        <textarea id="poruka" name="poruka" rows="5" required>
+        </textarea><br><br>
+        <input type="submit" value="Pošaljite poruku">
+    </form>
+    <section>
+        <h2>Opustite se uz našu glazbu</h2>
+        <audio controls src="audio/background_music.mp3" type="audio/mp3">
+            Vaš preglednik ne podržava audio element.</audio>
+    </section>
+    <section>
+        <h2>Naša lokacija</h2>
+        <p>Galerija Moderne umjetnost, Ulica 123, Grad, Država</p>
+        <iframe src="https://www.google.com/maps/embed?YOUR_GOOGLE_MAPS_EMBED_CODE" width="600px" height="450px" style="border: 0; loading="lazy"></iframe>
+    </section>
+   </main>
+   <footer>
+        <p>&copy; 2023 Galerija moderne umjetnosti.</p>
+    </footer>
+</body>

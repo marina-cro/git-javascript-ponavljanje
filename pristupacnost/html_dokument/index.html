@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend tečaj za početnike"> <!--bitno za seo-->
+    <meta name="keywords" content="frontend, tečaj, početnici, html, css, javascript"> <!--bitno za seo kad je stranica javno dostupna-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend tečaj</title>
+</head>
+<body>
+    <header>
+        <h1>Frontend tečaj</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="o-tecaju">O tečaju</a></li>
+                <li><a href="moduli">Moduli</a></li>
+                <li><a href="kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="o-tecaju">
+            <h2>O tečaju</h2>
+            <p>naučite osnove <strong>HTML-a, CSS-a</strong> i <em>web pristupačnosti</em></p> <!--ne b bold nego strong radi pristupačnosti-->
+            <img src="https://picsum.photos/600/300" alt="polaznici uče frontend development"></img>
+            <p>Više informacija pročitajte na <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs stranici</a>.</p>
+        </section>
+
+        <section id="moduli">
+            <h2>Moduli tečaja</h2>
+            <ul>
+                <li>HTML osnove</li>
+                <li>CSS stiliziranje</li>
+                <li>Pristupačnost web stranica</li>
+                <li>Responzivni dizajn</li>
+            </ul>
+        </section>
+
+        <section id="kontakt">
+            <h2>Prijava na tečaj</h2>
+            <form> <!--sa flexom (flex-column) se mmože postaviti jedno ispod drugog, ne preporučuje se brake br, da jedna budu ispod druge ubaciti u div!!! najbolje-->
+                <label for="ime">Ime i prezime</label>
+                <input type="text" id="ime" name="ime">
+                <label for="email">Email adresa</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Pošalji prijavu</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Frontend Akademija
+    </footer>
+</body>
+</html>

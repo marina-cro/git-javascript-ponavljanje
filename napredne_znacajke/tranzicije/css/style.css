@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    background-color: #99ccff;
+    border: 1px solid #333;
+    width: 300px;
+    height: 30px;
+    margin: 4em auto;
+}
+
+/*tranzicije*/
+div:first-of-type{
+    transition: width 2s linear;
+}
+
+/*hover za kad se priđe mišom preko slike raširi se*/
+div:first-of-type:hover{
+    width: 400px;
+}
+
+div:nth-of-type(2){
+    transition: all 1s linear;
+}
+
+div:nth-of-type(2):hover {
+    background: #ff0;
+    border: 3px solid greenyellow;
+}
+
+div:nth-of-type(3) {
+    transition: transform 1.5s;
+}
+
+div:nth-of-type(3):hover{
+    transform: translate(500px);
+}
+
+div:nth-of-type(4) {
+    transition: transform 1.5s;
+}
+
+div:nth-of-type(4):hover{
+    transform: rotate(360deg);
+}
+
+div:nth-of-type(5) {
+  /* transition: background 1s ease-in-out, transform 0.5s linear;*/
+  transition-property: background, transform;
+  transition-duration: 1s, 0.5s;
+  transition-timing-function: ease-in-out, linear;
+}
+
+div:nth-of-type(5):hover{
+    background: red;
+    transform: scale(1.2, 2) skew(10deg, 5deg);
+    border: 3px solid #99ccff;
+}
+
+div:last-of-type{
+    transition: opacity 2s ease-in;
+}
+
+div:last-of-type:hover{
+    opacity: 0;
+}
+
+@keyframes naziv_animacije{
+
+}
+
+div{
+    animation: naziv_animacije;
+}

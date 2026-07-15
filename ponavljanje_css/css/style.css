@@ -1,0 +1,161 @@
+:root{
+    --bg: #0b1220;
+    --panel: #111a2b;
+    --card: #132238;
+    --accent: #4ade8;
+    --text: #e5e7eb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg);
+    font-family: Arial;
+    color: var(--text);
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 245px 1fr;
+    min-height: 100vh;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--panel);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.brand h2{
+    font-size: 22px;
+}
+
+.brand p{
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--text);
+    transition:  0.3s;
+    position: relative;
+}
+
+.nav a:hover{
+    background: rgba(74, 222, 128, 0.15);
+   transform: translateX(6px);
+}
+
+.nav a.active{
+    background: var(--accent);
+    color: var(--bg);
+    font-weight: bold;
+}
+
+.nav a.active::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    height: 60%;
+    width: 4px;
+    background: white;
+    border-radius: 10px;
+}
+
+.nav a:focus{
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.hero{
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1f2937, var(--bg)) ;
+}
+
+.hero h1{
+    font-size: 32px;
+}
+
+.hero p{
+    opacity: 0.8;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.gallery {
+  padding: 20px;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.workouts {
+  padding: 20px;
+}
+
+.workout{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: var(--panel);
+    padding: 15px;
+    border-radius: 8px;
+    transition:0.3s;
+}
+
+.workout:hover{
+transform: scale(1.02);
+}
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>firebase registracija i prijava</title>
+</head>
+<body>
+        <div class="container1">
+            <div id="author">
+                <h2>Prijava / registracija</h2>
+                <input id="emailInput" type="email" placeholder="email">
+                <input id="passwordInput" type="password" placeholder="password">
+                <button id="btnLogin" type="button">Prijavi se</button>
+                <button id="btnRegister" type="button">Registriraj se</button>
+            </div>
+
+            <div id="app" style="display:none;">
+                <h2 id="dobrodosli"></h2>
+                <button id="btnLogout" type="button">Odjavi se</button>
+                <hr>
+                <h2>Stavke</h2>
+                <input id="itemInput" type="text" placeholder="Unesi stavku">
+                <button id="btnAddItem" type="button">Dodaj stavku</button>
+                <ul id="dataList"></ul>
+            </div>
+        </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/12.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.15.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.15.0/firebase-database-compat.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

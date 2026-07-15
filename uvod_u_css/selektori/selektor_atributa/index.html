@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selektori html elemenata</title>
+    <style>
+        body {
+            color: #333;
+            font-size: 20px;
+        }
+        /*atribut bez obzira na vrijednost*/
+        [title] {
+            text-decoration: underline red solid;
+        }
+        /*atribut sa točnom vrijednosti*/
+        [title="prvi odlomak"] {
+            font-weight: bold;
+        }
+
+        /*navedeni izraz nalazi se u vrijednosti atributa odvojen razmakom*/
+        [title~="odlomak"] {
+            text-transform: uppercase;
+        }
+
+        /*navedeni izraz nalazi se na početku vrijednosti atributa*/
+        [title^="odlomak"] {
+            font-style: italic ;
+        }
+
+        /*navedeni izraz nalazi se na početku vrijednosti atributa odvojen znakom ili stoji samoistalno*/
+        [title|=odlomak] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /*navedeni izraz nalazi se na završetku vrijednosti atributa*/
+        [title$="odlomak"] {
+            color: darkorange;
+        }
+
+        /*navedeni izraz nalazi se u vrijednosti atributa*/
+        [title*="odlomak"] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+<h1 title="naslov stranice">Lorem ipsum dolor</h1>
+<h2>Lorem ipsum dolor</h2>
+<h3>lorem ipsum dolor</h3>
+<h4>Lorem ipsum dolor</h4>
+<p title="prvi odlomak">
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+</p>
+<p title="odlomak-2">
+     lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate   
+</p>
+<p title="odlomak 3">
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor<span title="Iure"> sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, vol</span>uptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+</p>
+<h2>lorem ipsum dolor</h2>
+<h3>lorem ipsum dolor</h3>
+<h4>Lorem ipsum dolor</h4>
+<p title="odlomakbla">
+     lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Dolospan title="Iure"> sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, vol</span>ribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate   
+</p>
+<p>
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptatespan title="Iure"> sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, vol</span>. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+    lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptas, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. Doloribus, voluptate. 
+    Doloribus, voluptate. Doloribus, voluptate
+</p>
+</body>
+</html>

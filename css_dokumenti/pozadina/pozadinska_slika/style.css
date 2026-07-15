@@ -1,0 +1,15 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #333;
+   /* background-color: #ddd;
+    background-image: url("slike/butterfly.png");
+    background-repeat: no-repeat;
+    background-size:25%;
+    background-position: center center;
+    background-attachment: fixed;*/
+
+
+/*kraći zapis*/
+background: #ddd url("slike/butterfly.png") no-repeat center center 25% fixed;
+}

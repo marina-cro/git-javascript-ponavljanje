@@ -1,0 +1,35 @@
+nav ul li{
+    display: inline-flex;
+    margin: 5px;
+}
+
+nav{
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+    
+nav ul {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+#art1{
+    background-color: brown !important;
+}
+    
+.galerija{
+    background-color: aqua;
+}
+
+/* a:active{
+    text-decoration: underline;
+    color:violet;
+} */

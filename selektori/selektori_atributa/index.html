@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektori HTML elemenata</title>
+    <style>
+        body {
+            color: #333;
+            font-size: 20px;
+        }
+
+        /*atribut bez obzira na vrijednost*/
+        [title] {
+            text-decoration: underline red solid;
+        }
+
+        /*atribut s točnom vrijednosti*/
+        [title="prvi odlomak"] {
+            font-weight: bold;
+        }
+
+        /*navedeni izraz nalazi su u vrijednosti atributa odvojen razmakom*/
+        [title~="odlomak"] {
+            text-transform: uppercase;
+        }
+
+        /*navedeni izraz nalazi se na početku vrijednosti atributa*/
+        [title^="odlomak"] {
+            font-style: italic;
+        }
+
+        /*navedeni izraz nalazi se na početku vrijednosti atriibuta odvojen znakom
+         "-" (ili stoji samostalno)" */
+        [title|="odlomak"] {
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        /*navedeni izraz nalazi se bilo gdje unutar vrijednosti atributa*/
+        [title*="odlomak"] {
+            color: darkgreen;
+        }
+
+        /*navedeni izraz nalazi se na završetku vrijednosti atributa*/
+        [title$="odlomak"] {
+            color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 title="naslov stranice">Lorem ipsum dolor</h1>
+    <h2>Lorem ipsum dolor</h2>
+    <h3>Lorem ipsum dolor</h3>
+    <h4>Lorem ipsum dolor</h4>
+    <p title="prvi odlomak">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui? Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+    </p>
+    <p title="odlomak-2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque,
+        corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+
+    </p>
+    <p title="odlomak 3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque,
+        corrupti animi illo
+        quas hic nam! <span title="Iure">Iure suscipit fuga </span>beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet <span title="Iure">consectetur adipisicing elit. Nihil ad velit harum ipsa neque,
+            corrupti animi illo
+            quas hic nam! Iure suscipit fuga beatae velit</span> veniam quia voluptates quisquam qui?
+
+    </p>
+    <h2>Lorem ispum dolor</h2>
+    <h3>Lorem ispum dolor</h3>
+    <h4>Lorem ispum dolor</h4>
+    <p title="odlomakbla"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque,
+        corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil ad velit harum ipsa neque, corrupti animi illo
+        quas hic nam! Iure suscipit fuga beatae velit veniam quia voluptates quisquam qui?
+
+    </p>
+</body>
+
+</html>

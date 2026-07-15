@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strukturni elementi zadatak</title>
+    <style>
+        /* Osnovni stilovi za preglednost (opcionalno) */
+        body { font-family: Arial, sans-serif; line-height: 3; margin: 20px; }
+        section, article, aside, footer, header, nav, div { 
+            border: 1px solid #ccc; 
+            padding: 15px; 
+            margin-bottom: 10px; 
+        }
+        img { max-width: 100px; display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Naslovnica</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <h1>Naslov stranice</h1>
+            <img src="slike/logo/html-css.png" alt="HTML5 logo" height="300" width="300">
+            <p>Uvodni tekst</p>
+        </div>
+    </header>
+
+    <main>
+        <h1>Naslov sadržaja stranice</h1>
+
+        <section>
+            <h2>O nama</h2>
+            
+            <section>
+                <h3>Naša misija</h3>
+                <p>...</p>
+            </section>
+
+            <section>
+                <h3>Vlasnička struktura tvrtke</h3>
+                <p>...</p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Naše djelatnosti</h2>
+            
+            <article>
+                <h3>Web dizajn</h3>
+                <p>...</p>
+                <a href="#">saznajte više</a>
+            </article>
+
+            <article>
+                <h3>Internetski marketing</h3>
+                <p>...</p>
+                <a href="#">saznajte više</a>
+            </article>
+        </section>
+
+        <section>
+            <h2>Naš stručni tim</h2>
+
+            <article>
+                <h3>Web developers</h3>
+                <figure>
+                    <img src="slike/ljudi/lica/female-with-bobcut-hair.png" alt="Ana Anić">
+                    <figcaption>Ana Anić</figcaption>
+                </figure>
+                <figure>
+                    <img src="slike/ljudi/lica/person-close-up-to-face-with-short-dark-hair.png" alt="Pero Perić">
+                    <figcaption>Pero Perić</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>QA and testing specialists</h3>
+                <figure>
+                    <img src="slike/ljudi/lica/one-sided-hair-of-a-male-teenager.png" alt="Jura Jupiter">
+                    <figcaption>Jura Jupiter</figcaption>
+                </figure>
+                <figure>
+                    <img src="slike/ljudi/lica/young-face-with-dark-short-hair.png" alt="Maja Majić">
+                    <figcaption>Maja Majić</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Korisne poveznice</h3>
+            <ul>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Lorem ipsum</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>footer
+        <h1>Tvrtka XYZ</h1>
+    
+        <div id="kontakt">div
+            <h3>Kontakt</h3>
+            <address>adress<br>
+                Ilica 242 10000 Zagreb<br>
+                <a href="mailto:info@supertruper.com">info@supertruper.com</a><br>
+                <a href="tel:+3851789456123">+385 1 789456123</a>
+            </address>
+        </div>
+
+        <div id="drustvene mreze">div
+            <h2>Pratite nas na društvenim mrežama</h2>
+            <a href="https://web.facebook.com/?locale=hr_HR&_rdc=1&_rdr#" title="Facebook" target="_blank">
+                <img src="slike/logo/facebook.png" width="60" height="60" alt="Facebook" >
+            </a>
+            <a href="https://x.com/" title="twitter" target="_blank">
+                <img src="slike/logo/twitter.png" width="60" height="60" alt="Twitter" >
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

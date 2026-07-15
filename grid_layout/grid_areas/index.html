@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid areas</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height:100vh;
+            display: grid;
+            /*grid-template-columns - određuje koliko će biti stupaca u pojedinom redu*/
+            grid-template-columns: 200px 1fr 150px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /*ili autofit jednake širine i visine, stupci*/
+            /*header
+            nav
+            saidbar main ads
+            footer*/
+            grid-template-areas: 
+                "header header header"
+                "nav nav nav"
+                "sidebar main ads"
+                "footer footer footer"
+            ;
+
+        .header{
+            grid-area: header;
+            background-color: aqua;
+        }
+
+        .nav{
+            grid-area: nav;
+            background-color: bisque;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+            background-color: burlywood;
+        }
+
+        .main{
+            grid-area: main;
+            background-color: blueviolet;
+        }
+
+        .ads{
+            grid-area: ads;
+            background-color: aquamarine;
+        }
+        
+        .footer{
+            grid-area: footer;
+            background-color: yellowgreen;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            header
+        </header>
+        <nav class="nav">Nav</nav>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="main">Main</main>
+        <div class="ads">Ads</div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

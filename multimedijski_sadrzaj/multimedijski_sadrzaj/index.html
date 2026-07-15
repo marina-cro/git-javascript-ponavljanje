@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedijski sadržaj</title>
+</head>
+
+<body>
+    <h1>Multimedijski sadržaj</h1>
+
+    <h3>Video sadržaj</h3>
+
+    <!-- kada ima jedan izvor -->
+    <video controls autoplay muted loop width="960" height="520">
+        <source src="video/movie.mp4" type="video/mp4">
+        Vaš preglednik ne podržava video element.
+    </video>
+
+    <h3>Audio sadržaj</h3>
+    <audio controls autoplay muted loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        <source src="audio/music.ogg" type="audio/ogg">
+        <source src="audio/music.wav" type="audio/wav">
+        Vaš preglednik ne podržava audio element.
+    </audio>
+
+    <h3>Ugradnja HTML sadržaja (YT video ili web stranica)</h3>
+    <iframe src="https://www.algebra.hr/sveuciliste/" width="960" height="520"></iframe>
+
+
+    <h3>ugradnja ne html sadrzaja</h3>
+    <object data="dokumenti/pdf-dokument.pdf"width="600" height="800"></object>
+    <p>
+        <a href="dokumenti/pdf-dokument.pdf" target="_self">Pdf dokument</a>
+    </p>
+</body>
+</html>

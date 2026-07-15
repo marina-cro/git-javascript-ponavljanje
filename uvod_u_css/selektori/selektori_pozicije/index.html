@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selektori html elemenata</title>
+    <style>
+        body {
+            color: #333;
+            font-size: 20px;
+        }
+
+        header{
+            color: red;
+
+        }
+
+        footer{
+            color: orange;
+        }
+
+        p:first-child{
+            text-decoration: underline red wavy;
+        }
+
+        p:last-child{
+            font-size: 14px;
+        }
+
+        p:nth-child(2){
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /*ako zelimo samo parne elemente*/
+        /*p:nth-child(even){
+            text-shadow:2px 2px 5px rgb(0, 0, 0);
+        }
+
+        /*ako zelimo samo neparne elemente*/
+        /*p:nth-child(odd){
+            text-decoration: underline blue wavy dotted;
+        }
+
+        /*formula oblika an+b*/
+        /*n-brojač kreće od nule*/
+        /*b - korak koliko ga preskačemo*/
+        /*p:nth-child(n + 1){
+            color: green;
+        }*/
+
+        p:first-of-type{
+            font-weight: bold;
+        }
+
+        p:last-of-type{
+            text-transform:uppercase;
+        }
+
+        p:nth-of-type(2){
+            ftext-align: end;
+            color:darkcyan;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Zaglavlje</h1>
+        <p>odlomak</p>
+    </header>
+    <section>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+
+    </section>
+    <section>
+        <h1>Naslov sekcije</h1>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+       
+    </section>
+    <footer>
+        <p>odlomak</p>
+        <p>odlomak</p>
+        <p>odlomak</p>
+    </footer>
+</body>
+</html>

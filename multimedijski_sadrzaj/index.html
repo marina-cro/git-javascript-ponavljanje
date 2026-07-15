@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficki elementi</title>
+</head>
+<body>
+    <h1>Graficki elementi</h1>
+    <hr>
+    <h2>img</h2>
+    <!--Apsolutna putanja -->
+    <!-- <img src="C:/Users/silvi/source/repos/POUB_predavanja/5.generacija/1.Modul_HTML_struktura_i_sadržaj\vjezbe_s_predavanja/Multimedijski_sadrzaj/slike/grad-london.jpg"
+        alt="London - glavni grad UK-a" /> -->
+    <!--Relativna putanja-->
+    <img src="slike/grad-london.jpg"alt="London - glavni grad UK-a" width="760px" height="430px">
+    <br>
+    <span>London - glavni grad</span>
+    <hr>
+    <picture>
+        <source srcset="slike/stari-grad.jpg" media="(min-width:980px)"width="932px" height="324px">
+        <img src="slike/stari-grad-mala.jpg" alt="Stari grad" width="668px" height="489px">
+    </picture>
+    <br>
+    <span>Stari grad</span>
+    <hr>
+    <figure>
+        <img src="slike/grad-pariz.jpg" alt="Pariz - glavni grad Francuske" title="Pariz - glavni grad Francuske"
+            width="760px" height="430px">  
+        <figcaption>Pariz - glavni grad Francuske</figcaption>
+    </figure>
+</body>
+</html>

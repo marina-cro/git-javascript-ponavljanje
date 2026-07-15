@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontekstualni selektori</title>
+    <style>
+        section p{
+            color: green;
+        }
+
+        footer section p{
+            font-family: 'Courier New', Courier, monospace;
+        }
+         
+        section>p, 
+        article p, 
+        {
+            text-decoration: line-through red solid;
+        }
+
+        h1+p{
+            font-weight: bold;
+        }
+
+        h1~p{
+            font-style: italic;
+        }
+
+        .prvatri h1~p:nth-of-type(-n+3){
+            font-style:oblique;
+            text-decoration: underline darkblue wavy;
+        }
+
+        .prvatri h1~ul li:nth-of-type(-n+3)::marker{
+            color : red;
+;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zaglavlje</h1>
+        <p>odlomak</p>
+    </header>
+    <main>
+        <section>
+            <h1>sekcija</h1>
+            <div>
+                <p>odlomak</p>
+                <p>odlomak</p>
+            </div>
+            <article>
+                <p>odlomak</p>
+                <p>odlomak</p>
+            </article>
+        </section>
+        <section>
+            <h1>sekcija</h1>
+                <p>odlomak</p>
+                <p>odlomak</p>
+                <p>odlomak</p>
+                <p>odlomak</p>
+                <p>odlomak</p>
+        </section>   
+        <article class= "prvatri">
+            <h1>objava</h1>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <ul>
+                <li>Poveznica</li>
+                <li>Poveznica</li>
+                <li>Poveznica</li>
+                <li>Poveznica</li>
+                <li>Poveznica</li>
+                <li>Poveznica</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <h1>Podnožje</h1>
+        <section id="prvatri" class="prvatri">
+            <h1>sekcija</h1>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>   
+        </section>
+        <section>
+            <h1>sekcija</h1>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>
+            <p>odlomak</p>   
+        </section>
+    </footer>
+</body>
+</html>

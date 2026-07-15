@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+li{
+    padding: 20px;
+}
+
+li:nth-child(even){
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+
+a{
+    color: rgb(47, 79, 79);
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover{
+    color: orange; /*mjenja boju kad smo mišem na elementu*/
+    background-color: rgb(47, 79, 79);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input:focus{
+    border: 3px solid red;
+}
+
+/*PSEUDOELEMENTI*/
+p::first-letter{
+    font-size: 18px;
+    color: red;
+}
+
+article:first-of-type p:first-of-type::before{
+    content: "->";
+    color: green;
+}
+
+a::after{
+    content: "\f135";
+    font-family: "Font Awsome 6 Free";
+    font-weight: 900;
+    margin-left: 5px;
+    color: aqua;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser okolina</title>
+</head>
+<body onload="vrijeme(); sat1(); sat2()">
+    <header>
+        Browser okolina
+    </header>
+    <main>
+        <section>
+            <h3>Trenutno vrijeme</h3>
+            <p id="sat1"></p>
+            <button onclick="zaustaviSat()">Zaustavi sat</button>
+            <button onclick="sat1()">Pokreni sat</button>
+        </section>
+        <hr>
+        <section>
+            <h3>Trenutno vrijeme</h3>
+            <p id="sat2"></p>
+            <button onclick="zaustaviSat2()">Zaustavi sat</button>
+            <button onclick="sat2()">Pokreni sat</button>
+        </section>
+        <hr>
+        <section>
+            <h3>Interaktivne forme</h3>
+            <button onclick="pozdrav()">Alert</button>
+            <button onclick="odabirOpcije()">Confirm</button>
+            <button onclick="ocjena()">Prompt</button>
+        </section>
+        <section>
+            <h3>Uppravljanje prozorom</h3>
+            <button onclick="otvoriProzor()">otvori prozor</button>
+            <button onclick="zatvoriProzor()">zatvori prozor</button>
+        </section>
+        <hr>
+        <section>
+            <button onclick="navigator()">Podaci iz navigaotra</button>
+        </section>
+        <hr>
+        <section>
+            <h3>Karakteristike zaslona</h3>
+            <button type="button" onclick="zaslon()">Karakteristike zaslona</button>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

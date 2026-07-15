@@ -1,0 +1,40 @@
+/* selektor za naslov 1 razine - h1 */
+h1{
+    color: red;
+}
+
+/*selektor za naslov druge razine - h2*/
+h2{
+    color: green;
+}
+
+h3{
+    color: blueviolet;
+}
+
+p{
+    color: orange;
+}
+
+ul{
+    margin-left: 0px;
+    padding:0;
+    list-style: none;
+    display: flex;
+    display:block;
+}
+
+a{
+    color: aquamarine !important;
+    text-decoration: none;
+    margin-right: 10px;
+    color: brown !important;
+}
+
+#stranica2-h4{
+    color: crimson !important;
+}
+
+h4{
+    color: yellowgreen;
+}

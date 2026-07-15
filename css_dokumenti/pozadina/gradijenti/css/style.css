@@ -1,0 +1,99 @@
+p:first-of-type{
+    /*background: linear-gradient(to right, red, purple, blue, green, yellow);*/
+    /*background: linear-gradient(90deg, red, purple, blue, green, yellow);*/
+    /*background: linear-gradient(90deg, 
+    red 0% 10%, 
+    purple 10% 17%, 
+    blue 20% 47%, 
+    green 50% 67%, 
+    yellow 70%);*/
+    /*background: linear-gradient(90deg, 
+    red, 
+    purple, 
+    blue 40%, 
+    green 60%, 
+    yellow 80%);*/
+    /*background: repeating-linear-gradient(90deg, red, green 20%, blue 40%);*/
+    /*background: repeating-linear-gradient(
+        90deg, 
+        red, 
+        green 20%, 
+        blue 40%,
+         red 50%
+         );*/
+    background: 
+    url(../slike/light-bulb.png) no-repeat center center/contain, 
+    linear-gradient(to right, red, purple, blue, green, yellow);
+}
+
+p:nth-of-type(2){
+    /*background: radial-gradient(circle farthest-corner at 75% 25%, 
+    red, 
+    blue 50%,
+    green 80%,
+    yellow 90%, 
+    transparent 20%
+    );*/
+    background: repeating-radial-gradient(
+        circle farthest-side at 0% 0%, 
+        red, 
+        blue 20%,
+        red 30%
+        );
+}
+
+p:nth-of-type(3){
+    background: radial-gradient(
+    circle at 75% 25%, 
+    rgba(77, 145, 255, 1),
+    rgba(77, 145, 255, 0.1)
+    );
+}
+
+p:nth-of-type(4){
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    /*background: conic-gradient(
+        red, 
+        purple,
+        blue, 
+        green, 
+        yellow,
+        orange,
+        red
+        );*/
+   /* background: conic-gradient(
+    from 90deg at 60% 40%, 
+    red, 
+    purple,
+    blue, 
+    green, 
+    yellow, 
+    orange,
+    red
+    );*/
+
+    /*za torta grafikon*/
+    /*background: conic-gradient(
+    red 0 45deg, 
+    purple 45deg 80deg,
+    blue 80deg 125deg, 
+    green 125deg 180deg, 
+    yellow 180deg 240deg, 
+    orange 240deg 300deg
+    );*/
+
+    background: repeating-conic-gradient(red 0 10deg, blue 40deg 60deg, green 70deg 90deg, red 100deg 110deg);
+}
+
+/*p:last-of-type*/
+p:nth-of-type(5){
+    font-size: 48px;
+    background: linear-gradient(261deg, #c40f61, #e27210);
+    background-clip: text;
+    color:transparent;
+
+}
+
+

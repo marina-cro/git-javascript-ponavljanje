@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naslijeđivanje</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: darkblue;
+            /*dolje navedena svojstva se neće naslijediti*/
+            background-color: lightslategrey;
+           padding:20px;
+        }
+
+        .parent{
+            background-color: lightsteelblue;
+            border: 2px solid navy;
+            padding: 20px;
+        }
+
+        .child{
+            border: 2px dashed gray;
+            padding: 10px;
+            background-color: inherit !important;
+        }
+
+        .forced-inherit{
+            margin-top:10px;
+            background-color: inherit;
+            padding: inherit;
+            border: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>Roditeljski element (parent)</p>
+        <div class="child">
+            <p>
+                Dijete element (child) nasljeđuje color, font-family, font-size<br>
+                ali ne background-color osim ako se ne kaže inherit
+            </p>
+        </div>
+        <div class="forced-inherit">
+            <p>ovdje su i bacground-color, padding i border prisiljeni nasljeđivati
+
+            </p>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*za prilagođavanje veličine elemenata 
+    - povećavanje i smanjivanje i dodati @media*/
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    background-color: #f5f5f5;
+    color:#222;
+}
+
+/*ZAGLAVLJE*/
+header, footer{
+    background-color: #0d47a1;
+    color: white;
+    padding:15px;
+}
+
+header h1{
+    margin-bottom: 15px;
+}
+
+/*NAVIGACIJA*/
+.nav-list{
+    display: flex; /*za u istom redu*/
+    gap: 20px; /*razmak između linkova*/
+    list-style: none; /*uklanja točke ispred linkova*/
+}
+
+.nav-list a{
+    text-decoration: none; /*uklanja podcrtavanje*/
+    color: white;
+    padding: 10px; /*odmicanje od ruba linka*/
+}
+
+.nav-list a:focus { /*fokus na kad se prelazi mišem*/
+    background-color: 2px solid white;
+    border-radius: 10px;
+    outline-offset: 3px;
+}
+
+main{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+article{
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px; /*STAVI U ZAVRŠNI ZA SLIKE*/
+}
+
+h2{
+    margin-bottom: 20px;
+    color: #0d47a1;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .nav-list{
+        flex-direction: column; /*za vertikalno prikazivanje linkova na manjim ekranima*/
+    }
+}

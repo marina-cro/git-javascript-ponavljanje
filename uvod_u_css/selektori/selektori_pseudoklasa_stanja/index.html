@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selektori pseudoklasa stanja</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        /*kada je poveznica posjećena*/
+        a:link{
+            color: blue;
+        }
+
+        /*kada je poveznica u stanju linka*/
+        a:visited{
+            color: purple;
+        }
+
+        /*kada korisnik postavi miš na poveznicu*/
+        a:hover{
+            color: red;
+        }
+
+        /*kada korisnik klikne na element - kada je id u fokusu*/
+        a:focus{
+            color: orange;
+        }
+
+         /*kada je poveznica aktivna, tj. kada se klikne na nju*/
+         a:active{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.lipsum.com/" target=_blank>Lorem ipsum dolor</a></li>
+        <li><a href="https://www.lipsum.com/" target=_blank>Lorem ipsum dolor</a></li>
+        <li><a href="https://www.lipsum.com/" target=_blank>Lorem ipsum dolor</a></li>
+        <li><a href="https://www.lipsum.com/" target=_blank>Lorem ipsum dolor</a></li>
+        <li><a href="https://www.lipsum.com/" target=_blank>Lorem ipsum dolor</a></li>
+    </ul>
+</body>
+</html>

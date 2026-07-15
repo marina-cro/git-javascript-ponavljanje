@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste kompleksniji primjer</title>
+    <style>
+        ol {
+            counter-reset: brojac;
+            list-style-type: none;
+        }
+
+        li::before {
+            counter-increment: brojac;
+            content: counters(brojac, ".") " ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Ugniježdene liste</h1>
+
+    <ol>
+        <li>item</li>
+        <li>item
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item
+                    <ol>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+        </li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+
+    <ol>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+
+</body>
+</html>

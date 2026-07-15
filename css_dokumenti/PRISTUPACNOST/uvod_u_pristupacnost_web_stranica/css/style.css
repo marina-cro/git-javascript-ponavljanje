@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222;
+}
+
+ /*header*/
+header{
+    background-color: #0d47a1;
+    padding: 20px;
+}
+
+header h1{
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*NAVIGACIJA*/
+nav ul{
+    display: flex; /*za postaviti u isti red li-ove*/
+    gap: 20px; /*razmak između li-ova*/
+    list-style: none; /*uklanja defaultne točke ispred li-ova*/
+}
+
+nav a{
+    color: white; /*promjena boje teksta u navigaciji*/
+    text-decoration: none; /*uklanja podcrtavanje linkova*/
+    /*border: 1px solid white; /*dodaje obrub linkovima*/
+    padding: 10px; /*razmak oko teksta linkova*/
+}
+
+nav a:focus{
+    outline: 2px solid white; /*dodaje žuti obrub kada je element označen*/
+    outline-offset: 3px; /*razmak između obruba i elementa*/
+    border-radius: 5px; /*zaobljeni rubovi*/
+    background-color: #1565c0; 
+}
+
+nav a:hover{
+    background-color: #1565c0; /*promjena pozadine na ovo od focusa*/
+    border-radius: 5px;
+}
+
+/*MAIN*/
+main{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px; /*obrub tj razmak od ruba stranice*/
+}
+
+article h2{
+    margin-bottom: 20px; /*razmak ispod naslova članka, za odvajanje od slike ili drugog teksta*/ /*ISKORISTI ZA SVOJ MAIN*/
+}
+
+article p{
+    margin-bottom: 20px;
+    font-size: 18px; /*povećava veličinu teksta za bolju čitljivost*/
+}
+
+img{
+    width: 100%; /*slika zauzima punu širinu svog kontejnera*/
+    height: auto; /*prilagođava se širini slike*/
+    border-radius: 10px; /*zaobljeni rubovi slike*/
+    margin-bottom: 20px; /*razmak ispod slike*/
+}
+
+button{
+    background-color: #062d62;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer; /*promjena kursora na pokazivač kada se pređe preko gumba, kad je nešto klikabilno*/ /*možemo koristiti svoje ikonice*/
+    border: none;
+    border-radius: 5px;
+}
+
+
+button:hover{
+    background-color: #1565c0;
+    border-radius: 5px;
+    outline: 2px solid #062d62; /*dodaje tamniji obrub kada se pređe preko gumba*/
+
+}
+
+button:focus{
+    border: 3px solid #062d62; 
+    border-radius: 5px;
+    background-color: #1565c0;
+    padding: 13px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*responzivnost*/ /*za manje ekrane, flex elementi*/
+
+@media (max-width: 768px){
+    nav ul{
+        flex-direction: column; /*postavlja li-ove jedan ispod drugog kad je ekran manji*/
+        /*gap: 10px;*/ /*smanjuje razmak između li-ova*/
+    }
+
+    /*nav ul{
+        flex-wrap;
+    }*/
+
+    /* nav ul li{
+        width: 100%; /*svaki li zauzima punu širinu svog kontejnera*/ 
+
+
+  
